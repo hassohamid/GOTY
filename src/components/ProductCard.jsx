@@ -12,8 +12,7 @@ export default function ProductCard() {
       container
       spacing={3}
       sx={{
-        padding: { xs: 2, md: 7 }, // Reduced padding on mobile
-
+        padding: { xs: 2, md: 7 },
         justifyContent: "center", // Center the grid items
       }}
     >
@@ -35,6 +34,8 @@ export default function ProductCard() {
               height: "100%",
               display: "flex",
               flexDirection: "column",
+              alignItems: "center",
+              gap: 5,
               transition: "0.3s",
               "&:hover": {
                 transform: "scale(1.01)",
@@ -55,7 +56,7 @@ export default function ProductCard() {
               <Typography variant="h6" component="div" align="center">
                 {item.title}
               </Typography>
-              <CustomizedRating />
+              <CustomizedRating title={item.title} />
             </CardContent>
           </Card>
         </Grid>
