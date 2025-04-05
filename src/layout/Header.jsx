@@ -42,7 +42,7 @@ function Header() {
           <Toolbar disableGutters sx={{ width: "100%" }}>
             <FlashOn
               sx={{
-                display: { xs: "none", md: "flex" },
+                display: { xs: "flex", md: "flex" },
                 mr: 1,
                 color: "rgb(0, 0, 0)",
               }}
