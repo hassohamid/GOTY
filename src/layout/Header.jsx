@@ -100,7 +100,7 @@ function Header() {
             >
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Hasso" src="/src/img/KiNG.jpg" />
+                  <Avatar alt="Hasso" src="/KiNG.jpg" />
                 </IconButton>
               </Tooltip>
               <Menu
