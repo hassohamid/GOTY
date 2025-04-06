@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { toast, Flip } from "react-toastify";
+import { toast } from "react-toastify";
 
 const StyledRating = styled(Rating)({
   "& .MuiRating-iconFilled": {
@@ -17,12 +17,29 @@ const StyledRating = styled(Rating)({
 
 export default function CustomizedRating({ title }) {
   const handleRating = (event, newValue) => {
-    if (newValue === null) {
-      newValue = "0";
-    }
+    const rating = newValue ?? "0"; // Default to 0 if newValue is null
+
+    const getEmoji = (rating) => {
+      switch (rating) {
+        case 5:
+          return "🔥";
+        case 4:
+          return "⭐";
+        case 3:
+          return "👍";
+        case 2:
+          return "😐";
+        case 1:
+          return "😕";
+        default:
+          return "💔";
+      }
+    };
 
     toast.success(
-      `You gave ${title} ${newValue} star${newValue !== 1 ? "s" : ""}!`
+      `${getEmoji(rating)} You rated ${title} ${rating} star${
+        rating !== 1 ? "s" : ""
+      }!`
     );
   };
 

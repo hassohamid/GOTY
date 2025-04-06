@@ -13,8 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { FlashOn } from "@mui/icons-material";
 
-const pages = ["Products", "Trendy"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["About", "Hot"];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -98,35 +97,11 @@ function Header() {
             <Box
               sx={{ flexGrow: 0, display: "flex", justifyContent: "flex-end" }}
             >
-              <Tooltip title="Open settings">
+              <Tooltip>
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt="Hasso" src="/KiNG.jpg" />
                 </IconButton>
               </Tooltip>
-              <Menu
-                sx={{ mt: "45px" }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography sx={{ textAlign: "center" }}>
-                      {setting}
-                    </Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
             </Box>
           </Toolbar>
         </Container>

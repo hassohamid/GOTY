@@ -6,6 +6,7 @@ import "@fontsource/roboto/700.css";
 import Header from "./layout/header.jsx";
 import ProductCard from "./components/ProductCard.jsx";
 import OpeningVideo from "./components/OpeningVideo.jsx";
+import Footer from "./layout/footer.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <OpeningVideo />
         <ProductCard />
+        <Footer />
       </div>
     </>
   );

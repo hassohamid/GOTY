@@ -10,7 +10,7 @@ export default function OpeningVideo() {
         loop
         src="/corped.mp4"
       ></video>
-      <div className="openingmsg"> Overview</div>
+      <div className="openingmsg"> 🔥HOT🔥 </div>
       <Divider variant="insent" style={{ margin: "20px" }} />
     </div>
   );

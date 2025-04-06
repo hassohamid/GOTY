@@ -30,8 +30,8 @@ export default function ProductCard() {
         >
           <Card
             sx={{
-              maxWidth: "100%",
-              height: "100%",
+              width: "320px",
+              height: "400px",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -41,8 +41,6 @@ export default function ProductCard() {
                 transform: "scale(1.01)",
                 boxShadow: 3,
               },
-              textTransform: "uppercase",
-              margin: "0 auto",
             }}
           >
             <CardMedia
@@ -52,8 +50,19 @@ export default function ProductCard() {
               alt={item.title}
               sx={{ objectFit: "cover", width: "100%" }}
             />
-            <CardContent>
-              <Typography variant="h6" component="div" align="center">
+            <CardContent
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                variant="h6"
+                component="div"
+                align="center"
+                fontSize={18}
+              >
                 {item.title}
               </Typography>
               <CustomizedRating title={item.title} />
@@ -68,62 +77,62 @@ export default function ProductCard() {
 const itemData = [
   {
     img: "/6.png",
-    title: "Nike",
+    title: "Nike Air Force 1 '07",
   },
   {
     img: "/5.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Low",
   },
   {
     img: "/1.png",
-    title: "Nike",
+    title: "Nike Air Force 1 High",
   },
   {
     img: "/10.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Shadow",
   },
   {
     img: "/6.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Wild",
   },
   {
     img: "/5.png",
-    title: "Nike",
+    title: "Nike Air Force 1 LX",
   },
   {
     img: "/1.png",
-    title: "Nike",
+    title: "Nike Air Force 1 React",
   },
   {
     img: "/10.png",
-    title: "Nike",
+    title: "Nike Air Force 1 GTX",
   },
   {
     img: "/6.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Premium",
   },
   {
     img: "/5.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Fontanka",
   },
   {
     img: "/1.png",
-    title: "Nike",
+    title: "Nike Air Force 1 PLT.AF.ORM",
   },
   {
     img: "/10.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Mid",
   },
   {
     img: "/6.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Pixel",
   },
   {
     img: "/5.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Next Nature",
   },
   {
     img: "/1.png",
-    title: "Nike",
+    title: "Nike Air Force 1 Sage Low",
   },
 ];
