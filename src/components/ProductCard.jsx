@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CustomizedRating from "./CustomizedRating";
+import SetFavorite from "./SetFavorite";
 
 export default function ProductCard() {
   return (
@@ -37,12 +38,14 @@ export default function ProductCard() {
               alignItems: "center",
               gap: 5,
               transition: "0.3s",
+              position: "relative", // Add this
               "&:hover": {
                 transform: "scale(1.01)",
                 boxShadow: 3,
               },
             }}
           >
+            <SetFavorite />
             <CardMedia
               component="img"
               height="250"
