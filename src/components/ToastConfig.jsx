@@ -15,17 +15,23 @@ const ToastConfig = () => {
       pauseOnHover
       transition={Flip}
       icon={false}
-      progressStyle={{ background: "#ff6d75" }}
+      progressClassName="toast-progress-bar"
       toastStyle={{
         borderRadius: "10px",
-        background: "#333",
-        color: "#fff",
+        background: "white",
+        color: "black",
         padding: "1.5rem",
         margin: "8px",
         textAlign: "center",
         fontFamily: "Roboto, sans-serif",
+        fontSize: "1.2rem",
       }}
       closeButton={false}
+      style={{
+        "--toastify-color-progress-success": "#FF3D47",
+        "--toastify-color-progress-bar": "#FF3D47",
+      }}
+      limit={3}
     />
   );
 };
