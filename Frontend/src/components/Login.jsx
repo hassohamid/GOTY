@@ -115,7 +115,7 @@ export default function Login() {
               </Tooltip>
             </Box>
           </div>
-          <Link to="/">
+          <Link to="/home">
             <Button
               component={motion.button}
               whileHover={{ scale: 1.05 }}
