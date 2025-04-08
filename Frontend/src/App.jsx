@@ -1,22 +1,16 @@
-import "./App.css";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
-import Header from "./layout/header.jsx";
-import ProductCard from "./components/ProductCard.jsx";
-import OpeningVideo from "./components/OpeningVideo.jsx";
-import Footer from "./layout/footer.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Onboarding from "./pages/Onboarding";
 
 function App() {
   return (
     <>
-      <div className="bg">
-        <Header />
-        <OpeningVideo />
-        <ProductCard />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/login" element={<Onboarding />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

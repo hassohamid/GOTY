@@ -17,4 +17,4 @@ app.get("/", (_, res) => {
   res.send("SUCCESS!");
 });
 
-module.exports = app;
+module.exports = app; // Needs for Vercel later on.

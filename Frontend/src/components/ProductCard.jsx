@@ -6,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CustomizedRating from "./CustomizedRating";
 import SetFavorite from "./SetFavorite";
+import { motion } from "framer-motion";
 
 export default function ProductCard() {
   return (
