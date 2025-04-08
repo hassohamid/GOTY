@@ -14,7 +14,7 @@ function Header() {
     <AppBar position="static" sx={{ backgroundColor: "rgb(242, 0, 255)" }}>
       <Container>
         <Toolbar disableGutters>
-          <Link to="/">
+          <Link to="/home">
             <IconButton>
               <HomeRounded
                 sx={{
