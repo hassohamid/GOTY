@@ -5,10 +5,10 @@ import Onboarding from "./pages/Onboarding";
 function App() {
   return (
     <>
-      <BrowserRouter>
+     <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<Onboarding />} />
+          <Route path="/" element={<Onboarding />} />
+          <Route path="/home" element={<Homepage />} />
         </Routes>
       </BrowserRouter>
     </>
