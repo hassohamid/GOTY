@@ -1,7 +1,7 @@
-import Header from "../layout/header.jsx";
+import Header from "../layout/Header.jsx";
 import ProductCard from "../components/ProductCard.jsx";
 import OpeningVideo from "../components/OpeningVideo.jsx";
-import Footer from "../layout/footer.jsx";
+import Footer from "../layout/Footer.jsx";
 import { motion } from "framer-motion";
 
 function Homepage() {
